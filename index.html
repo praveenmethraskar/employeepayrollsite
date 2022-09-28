@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Payroll</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <section class="header1 pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <img src="assets/logo.png" alt="image">
+                    <p class="para1"><u> Employee Payroll UI/UX Design</u></p>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+
+    <section class="tablecontainer">
+
+        <div class="container">
+            <div class="table-wrapper">
+                <div class="table-title">
+                    <div class="row">
+                        <div class="col-sm-8"><h2>Employee <b>Details</b></h2></div>
+                        <div class="col-sm-4">
+                            <div class="search-box">
+                                <i class="material-icons">&#xE8B6;</i>
+                                <input type="text" class="form-control">
+                            </div>
+                            <button type="button" class="btn btn-info add-new" id="myBtn"><i class="fa fa-plus"></i> Add User</button>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-bordered" style="text-align:center">
+                    <thead style="background-color: #42515f;color:white;">
+                        <tr>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>Department</th>
+                            <th>Salary</th>
+                            <th>Start Date</th>
+                            <th>Action</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="assets/avatar.png" alt="" class="profile-img">Amarpa Shashanka Keerthi</td>
+                            <td>Female</td>
+                            <td>sales HR Finace</td>
+                            <td>10000</td>
+                            <td>29 oct 2019</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/avatar.png" alt="" class="profile-img">Amarpa Shashanka Keerthi</td>
+                            <td>Female</td>
+                            <td>sales HR Finace</td>
+                            <td>10000</td>
+                            <td>29 oct 2019</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/avatar.png" alt="" class="profile-img">Amarpa Shashanka Keerthi</td>
+                            <td>Female</td>
+                            <td>sales HR Finace</td>
+                            <td>10000</td>
+                            <td>29 oct 2019</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                            </td>
+                        </tr>      
+                    </tbody>
+                </table>
+            </div>
+        </div>     
+    </section>
+
+    <div id="myModal" class="modal">
+    <section class="header1 pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <img src="assets/logo.png" alt="image">
+                    <p class="para1"><u> Add Employee Payroll UI/UX Design</u></p>
+                </div> 
+            </div>
+        </div> 
+    </section>
+
+    <section class="tablecontainer">
+
+        <div class="container">
+            <div class="table-wrapper" style="padding: 20px;">
+                <div class="table-title">
+                    <div class="row">
+                        <div class="col-sm-12"><h2>Employee Payroll Form</b></h2></div> 
+                    </div>
+                    
+                </div>
+                <form action="" class="form-group">
+                    <div class="row">
+                        <div class="col-sm-4"><label class="form-label">Name</label></div>
+                        <div class="col-sm-8"><input type="text" class="form-control" value="" placeholder="Enter Name" required></div>
+                        <div class="pb-5" style="padding-bottom: 50px!important;"></div> 
+                        <div class="col-sm-4"><label class="form-label">Profile Image</label></div>
+                        <div class="col-sm-8"><input type="radio" class="form-check-input" name="profile" value=""><img src="assets/avatar.png" class="profile-img1" alt="" srcset="">
+                        <input type="radio" class="form-check-input" name="profile" value=""><img src="assets/avatar.png" class="profile-img1" alt="" srcset="">
+                        <input type="radio" class="form-check-input" name="profile" value=""><img src="assets/avatar.png" class="profile-img1" alt="" srcset="">
+                        <input type="radio" class="form-check-input" name="profile" value=""><img src="assets/avatar.png" class="profile-img1" alt="" srcset="">
+                        </div>
+                        <div class="pb-5" style="padding-bottom: 50px!important;"></div> 
+                        <div class="col-sm-4"><label class="form-label">Gender</label></div>
+                        <div class="col-sm-8"><input type="radio" class="form-check-input" name="gender"  value="male"><label class="gender-label">Male</label>
+                        <input type="radio" class="form-check-input" name="gender"  value="female"><label class="gender-label">Female</label>
+                        </div>
+
+                        <div class="pb-5" style="padding-bottom: 50px!important;"></div> 
+                        <div class="col-sm-4"><label class="form-label">Department</label></div>
+                        <div class="col-sm-8"><input type="checkbox" class="form-check-input" name="dept"  value="male"><label class="gender-label">HR</label>
+                        <input type="checkbox" class="form-check-input" name="dept"  value="female"><label class="gender-label">Sales</label>
+                        <input type="checkbox" class="form-check-input" name="dept"  value="female"><label class="gender-label">Finance</label>
+                        <input type="checkbox" class="form-check-input" name="dept"  value="female"><label class="gender-label">Engineer</label>
+                        <input type="checkbox" class="form-check-input" name="dept"  value="female"><label class="gender-label">Others</label>
+                        </div>
+
+
+                        <div class="pb-5" style="padding-bottom: 50px!important;"></div> 
+                        <div class="col-sm-4"><label class="form-label">Salary</label></div>
+                        <div class="col-sm-8">
+                            <select name="" id="" class="form-control select-area">
+                                <option value="">Select Salary</option>
+                                <option value="">10000</option>
+                                <option value="">15000</option>
+                                <option value="">20000</option>
+                                <option value="">25000</option>
+                                <option value="">30000</option>
+                                <option value="">35000</option>
+                                <option value="">40000</option>
+                            </select>
+                        </div>
+
+                        <div class="pb-5" style="padding-bottom: 50px!important;"></div> 
+                        <div class="col-sm-4"><label class="form-label">Start Date</label></div>
+                        <div class="col-sm-2">
+                            <select name="" id="" class="form-control select-area">
+                                <option value="">Day</option>
+                                <option value="">1</option><option value="">2</option><option value="">3</option><option value="">4</option><option value="">5</option><option value="">6</option><option value="">7</option><option value="">8</option><option value="">9</option><option value="">10</option>
+                                <option value="">11</option><option value="">12</option><option value="">13</option><option value="">14</option><option value="">15</option><option value="">16</option><option value="">17</option><option value="">18</option><option value="">19</option><option value="">20</option>
+                                <option value="">21</option><option value="">22</option><option value="">23</option><option value="">24</option><option value="">25</option><option value="">26</option><option value="">27</option><option value="">28</option><option value="">29</option><option value="">30</option>
+                                <option value="">31</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2">
+                            <select name="" id="" class="form-control select-area">
+                                <option value="">Month</option>
+                                <option value="">January</option><option value="">February</option><option value="">March</option><option value="">April</option><option value="">May</option><option value="">June</option>
+                                <option value="">July</option><option value="">August</option><option value="">September</option><option value="">October</option><option value="">November</option><option value="">December</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2">
+                            <select name="" id="ddlYears" class="form-control select-area">
+                                <option value="">Year</option>
+                            </select>
+                        </div>
+
+                        <div class="pb-5" style="padding-bottom: 50px!important;"></div> 
+                        <div class="col-sm-4"><label class="form-label">Notes</label></div>
+                        <div class="col-sm-8"><textarea name="" id="" cols="105" rows="5" placeholder="Enter Message" required></textarea></div>
+
+                        <div class="pb-5" style="padding-bottom: 50px!important;"></div> 
+
+                        <div class="col-sm-4"><button class="btn btn-default btn1" type="submit" onclick="javascript:window.location='index.html'">Cancel</button></div>
+                        <div class="col-sm-8"><button class="btn btn-default btn1" type="submit" name="submit">Submit</button>
+                            <button class="btn btn-default btn1" type="reset">Reset</button>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>     
+    </section>
+
+
+   </div>
+
+   <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            //Reference the DropDownList.
+            var ddlYears = document.getElementById("ddlYears");
+     
+            //Determine the Current Year.
+            var currentYear = (new Date()).getFullYear();
+     
+            //Loop and add the Year values to DropDownList.
+            for (var i = 1950; i <= currentYear; i++) {
+                var option = document.createElement("OPTION");
+                option.innerHTML = i;
+                option.value = i;
+                ddlYears.appendChild(option);
+            }
+        };
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
